@@ -9,11 +9,11 @@ const meta ={
 	empresa: 'Scrapnow Memory',
 	links: [
 		{
-			title: 'Catálogo Mujeres',
+			title: 'Regalo para ellas 💐',
 		 link:	'https://drive.google.com/file/d/1fpuoTtJBBcpKXaGpsRDloQcG4D1vMQ0N/view?usp=sharing'
 		},
 		{
-			title: 'Catálogo Hombres',
+			title: 'Regalo para ellos 👔',
 			link: ''
 		}
 	]
@@ -32,8 +32,17 @@ const {title, description, image, empresa, links} = meta;
 		</div>
 		{
 			links.map(({title,link})=>(
-				<Link {link} {title}/>
+				<Link {link} {title}>
+					🎁
+				</Link>
 			))
 		}
+	<p class="absolute bottom-6 md:relative pt-14 flex flex-col items-center">
+		Creando detalles que perduren en el corazon
+		<a href="https://api.whatsapp.com/send/?phone=51982696738&text&type=phone_number&app_absent=0" class="flex mt-2 p-2 rounded-full border-2 border-green-500 text-green-900 w-fit text-xs items-center gap-1">
+			Escribenos por whatsapp 
+			<img src="/whatsapp-icon.svg" alt="hablanos por whatsapp" class="size-6">
+		</a>
+	</p>
 	</div>
 </Layout>
